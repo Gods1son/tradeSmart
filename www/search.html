@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Search Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
+  <script src ="newsearchjs.js"></script>
+  <style>
+      /*body {
+          background-color: bisque;
+      }*/
+      .headStop{
+            position: fixed; /* Stay in place */
+            top:0;
+            left:0;
+            width: 100%;
+            clear: both;
+        }
+        /*#searchbar{
+
+        }*/
+       #linkmain {
+            /*padding: 8px 8px 8px 0;*/
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #992600; /*#818181*/
+            display: block;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .headStop a:hover, a:focus{
+            color: #e68a00;
+        }
+
+        img{
+            width: 100%;
+            padding-bottom: 5px;
+        }
+        #whatever{
+            background: white;
+        }
+
+div {
+              /*background: #e68a00;*/
+              /*position: relative;*/
+              background: white;
+              /*border-width: 3px 5px 5px 0;*/
+              border-width: 1;
+              width: 94%;
+
+              border-color: e67300; /*#e68a00;*/
+              box-shadow: 3px 3px 3px 3px #b3b3cc; /*  #ffcc99  #b3b3b3;*/
+              border-style: solid;
+              margin-bottom: 15px;
+              /*margin-right: 5px;*/
+
+              /*display: inline-block;*/
+              /*line-height: 6px;*/
+              padding: 0 10px 10px 10px;
+              overflow: hidden;
+              /*height: 100px;*/
+              word-wrap: break-word;
+          }
+
+          div img {
+              float:left;
+              margin-right: 10px;
+              margin-bottom: 10px;
+              width: 100%;
+          }
+
+          div p {
+              font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+              display: block;
+              font-size: 2em;
+              font-weight: 500;
+              color: black;
+              /*white-space: pre-line;*/
+              word-wrap: break-word;
+              /*line-height: 0.9;            */
+          }
+
+
+    </style>
+
+</head>
+<body>
+    <!--<div id="splash" style="width: 80vw; height: 70vh;"><img src="img/newlogo3.png" style="margin-top:30vh;margin-left:20vw;"></div>-->
+    <div class="headStop">
+        <div class="page-header">
+            <h1>Trade Smart</h1>
+        </div>
+        <!--<input type="text" id="searchFilter" onkeyup="searchman()" placeholder="Search...">-->
+        <div id="searchbar">
+            <input type="button" onclick="loadsearch()" value="search" style="float:right;font-size:16px;height:43px;">
+            <input type="text" id="searchFilter" onkeyup="searchman()" placeholder="Search...">
+
+            <!--<input type="text" id="search" name="search" required autofocus>
+            <input type="submit" onclick="return searchman();" value="Search">-->
+        <a href="index.html" id="linkmain">Main menu</a>
+        </div>
+    </div>
+
+    <div id="whatever">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2017, Trade Smart</p>
+    </footer>
+</body>
+</html>
