@@ -61,28 +61,10 @@
                 padding: 25px 0;
                 border-bottom: 1px solid white;
 
-                /*background:url(img/newlogosmarttrade.png) no-repeat center left;
-
-            /*img src="img/newlogosmarttrade.png" width="8%"/*/
-                /*background-image:-ms-linear-gradient(top, #e69900 0%, #ffeecc 51%);
-                background-image:linear-gradient (top, #e69900 0%, #ffeecc 51%);
-                background-image:-webkit-linear-gradient(top, #ffeecc 0%, #e69900 51%);*/
-
             }
             h1{
                  margin: 0;
             }
-            /*#header img{
-                position: realative;
-                float: left;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            #header h1{
-                position: relative;
-                float: left;
-                line-height: 40px;
-            }*/
 
             a {
                 /*padding: 8px 8px 8px 0;*/
@@ -120,23 +102,6 @@
         <script id="source" language="javascript" type="text/javascript">
         $(document).ready(function() {
 
-            // setTimeout(function(){
-            //     document.getElementById("splash").style.display="none";
-            // }, 3000);
-
-   /*$.ajax({
-        url: "http://ec2-34-198-155-79.compute-1.amazonaws.com/json.php",
-        type: "POST",
-        crossDomain: true,
-        data: "id",
-        dataType: "jsonp",
-        success:function(result){
-            alert(result);
-        },
-        error:function(xhr,status,error){
-            alert(status);
-        }
-    });*/
                     $.post("http://ec2-34-198-155-79.compute-1.amazonaws.com/json.php", function (result) {
 
                     var obj = JSON.parse(result);
@@ -179,25 +144,12 @@
                                     description.appendChild(descriptiontext);
                                     postdiv.appendChild(description);
 
-                                    //
-                                    /*//dynamically add images
-                                    var images = document.createElement("img");
-                                    images.setAttribute("src", obj[i].postimage);
-                                    images.setAttribute("width", "100px");
-                                    postdiv.appendChild(images);*/
-
                                     // attach the div to the body
                                     document.body.appendChild(postdiv);
 
-
-                                   /* titleP.innerHTML = titleP.innerHTML + obj[i].title + "<br>";
-                                    priceP.innerHTML = priceP.innerHTML + obj[i].price + "<br>";
-                                    contactP.innerHTML = contactP.innerHTML + obj[i].contact + "<br>";
-                                    descriptionP.innerHTML = descriptionP.innerHTML + obj[i].description + "<br>";
-                                    imageP.innerHTML = imageP.innerHTML + obj[i].postimage + "<br>";*/
                                 }
 
-                                 }
+                        }
                 );
     });
 

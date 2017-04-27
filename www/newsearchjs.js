@@ -1,6 +1,6 @@
 function loadsearch(){
 var basicUrl = "http://ec2-34-198-155-79.compute-1.amazonaws.com/mobilesearchjson.php?search=";
-var searchWord = document.getElementById("searchFilter").value;
+var searchWord = document.getElementById("searchFilter112").value;
 var mainUrl = basicUrl+searchWord;
 $.post(mainUrl, function (result) {
 
