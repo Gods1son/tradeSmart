@@ -9,6 +9,7 @@
         Tolulope
         Gurpreet
         Yasir
+        Shomi
     </author>
     <preference name="android-build-tool" value="gradle" />
     <content src="index.html" />
